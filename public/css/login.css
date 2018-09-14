@@ -1,0 +1,21 @@
+body {
+	padding: 20px 16%;
+	background-color: #fafafa;
+}
+body > div {
+	float: left;
+	margin: 10px;
+}
+.box-join {
+	text-align: center; 
+	margin-top: 50px;
+	padding: 40px 10px;
+	width: 40%;
+	border: 1px solid lightgray;
+	background-color: white;
+}
+#formJoin .data-input {display: block; margin: auto; margin-top: 10px; padding: 8px 7px; border: 1px solid #ccc; font-size: 15px; width: 300px; color: #555; max-width: calc(100% - 16px);}
+#formJoin .btn-submit {margin-top: 30px; padding: 8px 15px; background-color: #428bca; color: #fff; border: 1px solid #428bca; font-size: 15px; }
+#formJoin .btn-submit:hover {cursor: pointer; opacity: 0.9;}
+#formJoin .alert {color: red; margin: auto;}
+#formJoin .alert span {color: green;}

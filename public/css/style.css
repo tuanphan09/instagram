@@ -1,0 +1,480 @@
+body {
+	background-color: #f5f5f5;
+	padding-top: 100px;
+	padding-bottom: 40px;
+	margin: 0;
+	box-sizing: border-box;
+}
+.stopScroll {
+	overflow-y: hidden !important;
+}
+a:hover {
+	text-decoration: none;
+}
+#header {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background-color: white;
+	height: 71px;
+	border-bottom: 1px solid lightgrey;
+	padding: 0 15%;
+	z-index: 1;
+}
+#header > div {
+	position: relative;
+	float: left;
+	cursor: pointer;
+}
+
+#header > #search {
+	width: 58%;
+	cursor: default;
+}
+#header > #search > input {
+	margin: 20px auto 0;
+	display: block;
+	height: 30px;
+	padding: 5px 15px;
+}
+#header > #search > div {
+	position: absolute;
+    top: 100%;
+    left: 31%;
+    min-width: 38%;
+    z-index: 3;
+    background-color: white;
+    border-left: 1px solid lightgrey;
+	border-right: 1px solid lightgrey;
+    max-height: 300px;
+    overflow: auto;
+}
+#header > #search > div > p {
+	border-bottom: 1px solid #ebebeb;
+	margin: 0;
+}
+
+#header > #noti > div {
+	display: none;
+	position: absolute;
+	width: 500px;
+	max-height: 360px;
+	padding: 0 10px 0 0;
+	border: 1px solid lightgrey;
+	top: 100%;
+	right: -80px;
+	z-index: 2;
+	background-color: white;
+	overflow-y: auto;
+	overflow-x: hidden;
+	box-shadow: 0 -1px 1px lightgrey;
+	cursor: default;
+}
+#header > #noti > div table {
+	width: 100%;
+}
+#header > #noti > div img {
+	height: 30px;
+}
+#header > #noti a {
+	color: black;
+}
+
+#header > #noti tr td {
+	padding: 5px 0;
+	opacity: 0.9;
+	border-bottom: 1px solid #ebebeb;
+}
+#header > #noti tr td.td1 {
+	border-bottom: none;
+}
+#header > #noti tr td.td2 a {
+	font-size: 100%;
+}
+#header > #noti > div table tr td.td3 {
+	text-align: right;
+}
+#header > #noti > div table tr td.td3 span {
+	padding: 5px 10px;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	cursor: pointer;
+	opacity: 0.9;
+	font-size: 90%;
+}
+#header > #noti > div table tr td.td3 span:hover {
+	opacity: 1;
+}
+#header > #noti > p {
+	position: absolute;
+    top: 73%;
+    left: 47.5%;
+    width: 4px;
+    height: 4px;
+    background-color: red;
+    border-radius: 50%;
+    display: none;
+}
+
+
+
+#footer {
+	padding: 30px 0 20px 20%;
+}
+#footer > div {
+	float: left;
+	padding: 10px 13px;
+}
+
+.no_post {
+	width: 70%;
+	margin: auto;
+}
+.no_post > img {
+	width: 100%;
+}
+.wrapper_home {
+	width: 600px;
+	margin: auto;
+}
+.wrapper_home > .post {
+	margin-bottom: 50px;
+	background-color: white;
+	color: #2d2d2d;
+	border: 1px solid lightgrey;
+	border-radius: 4px;
+	overflow: hidden;
+}
+.wrapper_home > .post a {
+	color: #2d2d2d;
+}
+span.username {
+	font-size: 110%;
+	font-weight: bold;
+	color: #323232;
+}
+.wrapper_home > .post > div {
+	width: 100%;
+}
+
+img.avatar {
+	margin: 10px;
+	height: 30px;
+	border-radius: 50%;
+}
+.wrapper_home > .post > .post_user {
+	position: relative;
+}
+.wrapper_home > .post > .post_user > div {
+	position: absolute;
+	right: 0px;
+	top: 15px;
+}
+.wrapper_home > .post > .post_user > div > div {
+	background: white;
+	border: 0.5px solid lightgrey;
+	padding: 5px 10px;
+	cursor: pointer;
+	visibility: hidden;
+}
+.wrapper_home > .post > .post_user > div:hover > div {
+	visibility: visible;
+}
+.wrapper_home > .post > .post_img {
+	width: 100%;
+	height: 600px;
+	overflow: hidden;
+}	
+.wrapper_home > .post > .post_comment, .wrapper_home > .post > .add_comment {
+	padding: 0 20px;
+}
+.wrapper_home > .post > .post_comment p {
+	width: 100%;
+}
+
+.wrapper_home > .post > .add_comment input {
+	border: none;
+	opacity: 0.9; 
+	width: 100%;
+	height: 40px;
+	margin-bottom: 10px;
+}
+hr {
+	margin: 0;
+}
+input:focus {
+	outline: none;
+}
+.date {
+	opacity: 0.4;
+}
+
+.wrapper_post {
+	width: 70%;
+	margin: auto;
+	overflow: hidden;
+	border: 1px solid lightgrey;
+	background-color: white;
+	height: 600px;
+}
+.wrapper_post > .post_img {
+	width: 60%;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+}
+.wrapper_post > .post_img > img {
+	width: 100%; 
+}
+.wrapper_post > .post_info {
+	width: 40%;
+	height: 100%;
+	overflow: hidden;
+	float: left;
+	padding: 5px 0 5px 15px;
+	height: 100%;
+}
+
+.wrapper_post > .post_info a {
+	color: #2d2d2d;
+}
+table {
+	width: 100%;
+}
+.wrapper_post > .post_info > .post_user {
+	height: 10%;
+	position: relative;
+	/*background: grey;*/
+}
+.wrapper_post > .post_info > .post_user > div {
+	position: absolute;
+    right: 0px;
+    top: 15px;
+}
+.wrapper_post > .post_info > .post_user > div > div {
+	background: white;
+	border: 0.5px solid lightgrey;
+	padding: 5px 10px;
+	cursor: pointer;
+	visibility: hidden;
+}
+.wrapper_post > .post_info > .post_user > div:hover > div {
+	visibility: visible;
+}
+.wrapper_post > .post_info > .post_user td {
+	padding-right: 10px;
+}
+.wrapper_post > .post_info > .post_user  span:not(.username) {
+	padding: 5px 10px;
+	border: 1px solid lightgrey;
+	cursor: pointer;
+	opacity: 0.9;
+	float: right;
+	border-radius: 4px;
+}
+.wrapper_post > .post_info > .post_user  span:hover {
+	opacity: 1;
+}
+
+.wrapper_post > .post_info > .post_comment {
+	padding: 20px 10px;
+	height: 69%;
+	overflow-y: auto;
+	border-top: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+}
+.wrapper_post > .post_info > .post_interact {
+	height: 21%;
+}
+.wrapper_post > .post_info > .post_interact .date{
+	padding: 0 10px;
+}
+.wrapper_post > .post_info > .post_interact input {
+	border: none;
+	opacity: 0.9; 
+	width: 100%;
+	height: 40px;
+	margin-left: 10px;
+}
+
+#listLikes {
+	display: none;
+	position: fixed;
+	z-index: 5;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	background: rgba(0, 0, 0, 0.5);
+	padding-top: 50px;
+} 
+#listLikes > .list {
+	width: 550px;
+	max-height: 620px;
+	overflow: hidden;
+	padding: 10px 20px 5px;
+	background-color: white;
+	margin: auto;
+	overflow-y: auto;
+}
+#listLikes > .list > .caption input {
+	width: 100%;
+	margin-bottom: 25px;
+	padding: 10px;
+	border: none;
+	outline: none;
+}
+
+#listLikes > .list > .upload img {
+	width: 500px;
+	height: auto;
+	border: 1px solid #ebebeb;
+}
+#listLikes .row {
+	border-bottom: 1px solid #ebebeb;
+	height: 50px;
+	padding: 5px 10px;
+}
+#listLikes .row:first-child {
+	text-align: center;
+	font-weight: bold;
+	min-height: 30px;
+}
+#listLikes .row:first-child span {
+	color:white;
+	font-size: 120%;
+	background: #1E90FF; 
+	padding: 8px 15px;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+#listLikes .row > .ele1 {
+	float: left;
+	line-height: 30px;
+}
+#listLikes .row > .ele1  img {
+	height: 30px;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+#listLikes .row > .ele2 {
+	line-height: 40px;
+	float: right;
+}
+#listLikes .row > .ele2 span {
+	border: 1px solid lightgrey;
+	cursor: pointer;
+	/*font-weight: bold;*/
+	opacity: 0.9;
+	border-radius: 4px;
+	padding: 5px 10px;
+}
+#listLikes .row > .ele2 span:hover {
+	opacity: 1;
+}
+span.follow {
+	background-color: #1E90FF!important;
+	color: white!important;
+	border: none!important;
+}
+
+.mention {
+	color: blue!important;
+}
+
+.img_full {
+	width: 600px;
+}
+
+.wrapper_account {
+	width: 950px;
+	margin: auto;
+	overflow: hidden;
+}
+.wrapper_account > .user_info .td1 {
+	width: 323px;
+	text-align: center;
+}
+.wrapper_account > .user_info img {
+	width: 170px;
+	height: 170px;
+	border-radius: 50%;
+}
+.wrapper_account > .user_info table tr .td2 div {
+	width: 100%;
+	overflow: hidden;
+	padding: 10px 0;
+}
+.wrapper_account > .user_info table tr .td2 div p, .wrapper_account > .user_info table tr .td2 div h1 {
+	float: left;
+	margin: 0;
+	margin-right: 30px;
+	cursor: pointer;
+}
+.wrapper_account > .user_info table tr .td2 div p span {
+	padding: 7px 17px;
+	border: 1px solid lightgrey;
+	cursor: pointer;
+	opacity: 0.9;
+	float: right;
+	border-radius: 4px;
+	cursor: pointer;
+	color: black;
+}
+.wrapper_account > .user_info table tr .td2 div p  span:hover {
+	opacity: 1;
+}
+
+
+
+.wrapper_account > .post_img {
+	margin-top: 50px;
+}
+.wrapper_account > .post_img > div {
+	width: 293px; 
+	height: 293px;
+	margin: 10px; 
+	overflow: hidden;
+	float: left;
+}
+
+.wrapper_account > .post_img > div img {
+	width: 293px;
+	height: 293px;
+}
+.wrapper_account > .post_img > div img:hover {
+	opacity: 0.8;
+}
+
+.edit {
+	width: 650px;
+	overflow: hidden;
+	margin: 25px auto;
+	padding: 30px 50px;
+	background-color: white;
+	border: 1px solid lightgrey;
+	border-radius: 5px;
+}
+.edit form {
+	width: 100%;
+	overflow: hidden;
+}
+.edit form input {
+	border: 1px solid lightgrey;
+	padding: 7px 15px;
+	border-radius: 5px;
+}
+.edit form input[type='file'] {
+	border: none;
+}
+.edit form input[type='submit'] {
+	border: none;
+	color: white;
+	background-color: #1E90FF;
+}
+.edit table tr td > *{
+	margin: 10px 0;
+}
