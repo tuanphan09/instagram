@@ -1,13 +1,21 @@
 ﻿# instagram
 
-## 1. Introduce project ##
+## Introduce project ##
 
   Clone www.instagram.com
 - Language: PHP with no framework
 - Model: Model-View-Controller (MVC)
 - Realtime technique: Web Socket + Long Polling
 
-## 2. Demo project ##
+## Instruction ##
+
+- Install PHP + mysql + Rachet for web socket
+- Import file instagram.sql to create database
+- Go to app/model.php to change your account to connect to database
+- Run server for web socket with command: php socket/server.php
+- Done! Open website in your browser and sign up
+
+## Demo project ##
 
 - Login
 
