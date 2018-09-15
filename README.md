@@ -1,13 +1,13 @@
 ﻿# instagram
 
-1. INTRODUCE PROJECT
+## 1. Introduce project ##
 
-Clone www.instagram.com
+  Clone www.instagram.com
 - Language: PHP with no framework
 - Model: Model-View-Controller (MVC)
 - Realtime technique: Web Socket + Long Polling
 
-2. DEMO PROJECT
+## 2. Demo project ##
 
 - Login
 
