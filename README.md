@@ -1,2 +1,5 @@
 # instagram
-Project hướng dẫn clone lại trang instagram.com đơn giản 
+Project clone đơn giản lại trang instagram.com
+- Ngôn ngữ: PHP thuần
+- Mô hình: Model-View-Controller (MVC)
+- Kĩ thuật cho realtime: Web Socket + Long Polling
